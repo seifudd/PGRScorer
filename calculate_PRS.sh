@@ -44,7 +44,7 @@ plink --bfile "$workingdir/$genotype_file_name" \
       header-read \
       no-mean-imputation \
       ignore-dup-ids \
-     --out "$workingdir/$genotype_file_name.grs.score"
+     --out "$workingdir/${genotype_file_name}.grs.score"
 
 # Output will be named for e.g. AGES.grs.score
 # Description of output = https://www.cog-genomics.org/plink/2.0/formats#sscore
