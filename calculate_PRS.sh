@@ -4,7 +4,7 @@
 ###############################################################################################################
 #
 # Script to calculate polygenic/genomic risk score (using PLINK 2.0)
-# Dowload PLINK 2.0 if not available on a computing cluster already = https://www.cog-genomics.org/plink/2.0/
+# Download PLINK 2.0 if not available on a computing cluster already = https://www.cog-genomics.org/plink/2.0/
 #
 # 1. Input: File (space delimited): "SNPid (matching with genotype data)" "Effect Allele" "Beta/Odds Ratio"
 # Description: This file was provided from the UK Biobank contains the following information:
