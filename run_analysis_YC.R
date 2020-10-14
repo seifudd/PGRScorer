@@ -70,13 +70,13 @@ for(type in c("All","Male","Female")){
   }
 
 # fit models
-  # [CAC continous (after log transformation of CAC score +1)]~[GRS as continuous]
+  # [CAC continuous (after log transformation of CAC score +1)]~[GRS as continuous]
   f_GcCc <- if(type != 'All') 'CAClog ~ GRS + age' else 'CAClog ~ GRS + age + factor(sex)'
 
-  # [CAC continous (after log transformation of CAC score +1)]~[GRS as quintile]
+  # [CAC continuous (after log transformation of CAC score +1)]~[GRS as quintile]
   f_GqCc <- if(type != 'All') 'CAClog ~ GRSquint + age' else 'CAClog ~ GRSquint + age + factor(sex)'
 
-  # [CAC continous (after log transformation of CAC score +1)]~[GRS as quintile - dichotomized]
+  # [CAC continuous (after log transformation of CAC score +1)]~[GRS as quintile - dichotomized]
   f_GqDichCc <- if(type != 'All') 'CAClog ~ factor(GRSquint) + age' else 'CAClog ~ factor(GRSquint) + age + factor(sex)'
 
   # [CAC in categories based on clinical recommendations]~[GRS as continuous]
